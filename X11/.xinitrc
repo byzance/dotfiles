@@ -55,7 +55,10 @@ xrdb ~/.Xresources
 # Laptop keyboard layout
 #setxkbmap -device `xinput -list | grep -i key | grep -m 1 "KEYBOARD_NAME" | grep -oP "(?<=id=)\d*"` fr
 
+xbindkeys &
 setxkbmap -device `xinput -list | grep -i key | grep -m 1 "AT Translated Set 2 keyboard" | grep -oP "(?<=id=)\d*"` fr
+
+xbindkeys
 
 exec dwm
 #exec awesome
